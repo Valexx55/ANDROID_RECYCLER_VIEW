@@ -10,8 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.vale.recyclerview.MainActivity">
 
+    <Button android:layout_width="wrap_content" android:text="+" android:layout_height="wrap_content" android:id="@+id/botonmas" android:onClick="aniadir"/>
+    <Button android:layout_width="wrap_content" android:layout_toRightOf="@+id/botonmas" android:text="-" android:layout_height="wrap_content" android:id="@+id/botonmenos" android:onClick="eliminar"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecView"
+        android:layout_below="@id/botonmenos"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
